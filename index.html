@@ -24,15 +24,15 @@
     <!-- script tag -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
     <style>
         .manrope {
@@ -41,10 +41,84 @@
     </style>
 </head>
 
-<body class="manrope">
+<body class="manrope lg:container mx-auto">
     <!-- header -->
-    <header>
+    <header class="w-full h[90vh] mx-auto mb-5 p-10">
+        <!-- navber -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
+                    <div>
+                        <a href="#"><i
+                                class="fa-solid fa-arrow-right -rotate-45 rounded-full w-12 h-12 border-red-600 bg-yellow-300 flex items-center justify-center"></i></a>
+                    </div>
+                    <!-- text -->
+                    <div>
+                        <h4 class="text-3xl font-bold">Rinterio</h4>
+                    </div>
+                </div>
+                <div class="navbar-center hidden text-base lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="font-bold"><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a> Blogs</a></li>
+                        <li><a>contact us</a></li>
 
+                    </ul>
+                </div>
+                <div class="navbar-end ">
+                    <div class="flex gap-4 items-center justify-center max-sm:hidden">
+                        <!-- search icon -->
+                        <div>
+                            <i
+                                class="fa-sharp fa-solid fa-magnifying-glass rounded-full bg-gray-200 w-9 h-9 flex items-center justify-center ">
+
+                            </i>
+                        </div>
+                        <!-- shopping icon -->
+                        <div>
+                            <i
+                                class="fa-solid fa-cart-shopping rounded-full bg-gray-200 w-9 h-9 flex items-center justify-center"></i>
+                        </div>
+
+                        <!-- icon and text -->
+                        <div
+                            class="flex items-center  justify-center gap-1 rounded-full bg-yellow-300 h-12 w-52 max-sm:hidden ">
+                            <div>
+                                <h1 class="text-xl font-bold">Book Consult</h1>
+                            </div>
+                            <!-- arrow -->
+                            <div>
+                                <a href="#"><i
+                                        class="fa-solid fa-arrow-right -rotate-45 rounded-full w-9 h-9 text-white border-red-600 bg-slate-950 flex items-center justify-center"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <a class="btn">Button</a> -->
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost right-0 lg:hidden">
+                            <div
+                                class="rounded-full w-10 h-10 border-red-600 bg-gray-300 flex items-center justify-center">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+
+        <!-- banner  -->
     </header>
 
     <!-- main -->
